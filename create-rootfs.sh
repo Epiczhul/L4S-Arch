@@ -16,15 +16,15 @@ dl_dir="${cwd}/dl"
 
 # Distro specific variables
 selection=arch
-img_url=http://fl.us.mirror.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
+img_url=http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
 img_sig_url="${img_url}.md5"
 img="${img_url##*/}"
 img_sig="${img_sig_url##*/}"
 validate_command="md5sum --status -c "${img_sig}""
 
 # Hekate files
-hekate_version=5.2.0
-nyx_version=0.9.0
+hekate_version=6.0.2
+nyx_version=1.5.2
 hekate_url=https://github.com/CTCaer/hekate/releases/download/v${hekate_version}/hekate_ctcaer_${hekate_version}_Nyx_${nyx_version}.zip
 hekate_zip=${hekate_url##*/}
 hekate_bin=hekate_ctcaer_${hekate_version}.bin
